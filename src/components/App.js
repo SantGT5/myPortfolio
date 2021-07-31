@@ -7,13 +7,13 @@ import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import RecentWork from "./RecentWor";
 import SocialMedia from "./SocialMedia";
-import WebSite from "./WebSiteCriation";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container mt-5">
         <Route path="/" component={NavBar} />
+        <div style={{ marginTop:"15rem" }}>
         <Route path="/" component={Introduction} />
         <Route path="/" component={AboutMe} />
         <Route path="/" component={RecentWork} />
@@ -49,6 +49,9 @@ function App() {
         />
 
         <Route path="/" component={SocialMedia} />
+
+        </div>
+        
       </div>
     </BrowserRouter>
   );

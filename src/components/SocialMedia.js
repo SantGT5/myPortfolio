@@ -11,7 +11,6 @@ function SocialMedia() {
       </h1>
       <div style={{ marginBottom:"8em" }} className="socialIcon">
         <a
-          className="email"
           href="mailto:gianspf@gmail.com?subject=Let's Talk!"
         >
           <i

@@ -1,12 +1,12 @@
 function Introduction() {
   return (
-    <div className="mb-5">
+    <div >
       <h1 className="intro">
         Hello<strong style={{ color: "red", fontSize: "130px" }}>.</strong>
       </h1>
-<div className="introName">
-<p className="intro mb-4">I am GianLucas</p>
-</div>
+      <div className="introName">
+        <p className="intro mb-4">I am GianLucas</p>
+      </div>
 
       <div className="introDescription d-flex justify-content-center">
         <i
@@ -17,6 +17,7 @@ function Introduction() {
           {" "}
           Full Stack Developer
         </span>
+        
       </div>
     </div>
   );
