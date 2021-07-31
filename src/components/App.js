@@ -5,6 +5,10 @@ import { BrowserRouter, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
+import RecentWork from "./RecentWor";
+import SocialMedia from "./SocialMedia";
+import WebSite from "./WebSiteCriation";
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +16,39 @@ function App() {
         <Route path="/" component={NavBar} />
         <Route path="/" component={Introduction} />
         <Route path="/" component={AboutMe} />
+        <Route path="/" component={RecentWork} />
+        <Route
+          path="/ironNote"
+          component={() => {
+            window.location = "https://iron-note.netlify.app/";
+            return null;
+          }}
+        />
+
+        <Route
+          path="/gitHubAccount"
+          component={() => {
+            window.location = "https://github.com/SantGT5";
+            return null;
+          }}
+        />
+        <Route
+          path="/linkedInAccount"
+          component={() => {
+            window.location = "https://www.linkedin.com/in/gian-lucas/";
+            return null;
+          }}
+        />
+
+        <Route
+          path="/instAccount"
+          component={() => {
+            window.location = "https://www.instagram.com/giaanlucas_/";
+            return null;
+          }}
+        />
+
+        <Route path="/" component={SocialMedia} />
       </div>
     </BrowserRouter>
   );

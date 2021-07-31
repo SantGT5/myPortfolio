@@ -4,8 +4,9 @@ function Introduction() {
       <h1 className="intro">
         Hello<strong style={{ color: "red", fontSize: "130px" }}>.</strong>
       </h1>
-
-      <p className="intro mb-4">I am GianLucas</p>
+<div className="introName">
+<p className="intro mb-4">I am GianLucas</p>
+</div>
 
       <div className="introDescription d-flex justify-content-center">
         <i
