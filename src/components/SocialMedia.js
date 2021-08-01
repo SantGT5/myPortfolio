@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 function SocialMedia() {
   return (
@@ -19,26 +18,27 @@ function SocialMedia() {
           ></i>
         </a>
 
-        <Link to="/gitHubAccount" target="popup">
+        <a rel="noreferrer" href="https://github.com/SantGT5" target="_blank">
           <i
             style={{ color: "white", fontSize: "40px" }}
             className="fab fa-github"
           ></i>
-        </Link>
+        </a>
 
-        <Link to="/linkedInAccount" target="popup">
+        <a rel="noreferrer" href="https://www.linkedin.com/in/gian-lucas/?locale=en_US" target="_blank">
           <i
             style={{ color: "white", fontSize: "40px" }}
             className="fab fa-linkedin-in"
+            
           ></i>
-        </Link>
+        </a>
 
-        <Link to="/instAccount" target="popup">
+        <a rel="noreferrer" href="https://www.instagram.com/giaanlucas_/" target="_blank">
           <i
             style={{ color: "white", fontSize: "40px" }}
             className="fab fa-instagram"
           ></i>
-        </Link>
+        </a>
       </div>
     </div>
   );

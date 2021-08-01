@@ -17,7 +17,7 @@ function App() {
         <Route path="/" component={Introduction} />
         <Route path="/" component={AboutMe} />
         <Route path="/" component={RecentWork} />
-        <Route
+        {/* <Route
           path="/ironNote"
           component={() => {
             window.location = "https://iron-note.netlify.app/";
@@ -46,7 +46,7 @@ function App() {
             window.location = "https://www.instagram.com/giaanlucas_/";
             return null;
           }}
-        />
+        /> */}
 
         <Route path="/" component={SocialMedia} />
 
