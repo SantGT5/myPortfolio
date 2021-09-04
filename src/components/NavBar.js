@@ -6,8 +6,8 @@ import myCVPNG from "./MyCV/GianLucas - CV.png";
 
 function NavBar() {
   return (
-    <div className="navBarDes fixed-top container">
-      <nav className="navbar">
+    <div className="navBarDes fixed-top">
+      <div className="navbar">
         <div style={{ background: "#181818" }} className="container-fluid">
           <Link
             to="/"
@@ -42,14 +42,15 @@ function NavBar() {
             <a rel="noreferrer" href="https://www.instagram.com/giaanlucas_/" target="_blank">
               <i style={{ fontSize: "30px" }} className="fab fa-instagram"></i>
             </a>
+            
           </div>
 
-          <div className="d-flex">
+
             {/* <Link to="/" style={{ color: "white" }} className="navbar-brand">
             <i className="fas fa-file-download"></i> Curriculum
             </Link> */}
 
-            <DropdownButton
+<DropdownButton
               id="dropdown-button-dark-example2"
               variant="#181818"
               menuVariant="dark"
@@ -71,9 +72,9 @@ function NavBar() {
                 PNG Version
               </Dropdown.Item>
             </DropdownButton>
-          </div>
+
         </div>
-      </nav>
+      </div>
     </div>
   );
 }
