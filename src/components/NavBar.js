@@ -24,7 +24,7 @@ function NavBar() {
             </div>
           </div>
 
-          <div className="navIcon">
+          <div className="navIcon" style={{ display:"flex", justifyContent:"center" }}>
             <a href="mailto:gianspf@gmail.com?subject=Let's Talk!">
               <i style={{ fontSize: "30px" }} className="far fa-envelope"></i>
             </a>
