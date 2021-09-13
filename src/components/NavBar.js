@@ -15,10 +15,6 @@ function NavBar() {
             style={{ color: "white", fontSize: "25px" }}
             className="navbar-brand"
           >
-            {/* <i
-              style={{ color: "white", fontSize: "27px" }}
-              className="fas fa-bug"
-            ></i> */}
             <div className="err" title="404">
               404
             </div>
