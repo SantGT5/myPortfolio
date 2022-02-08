@@ -1,0 +1,824 @@
+// *** Font Roboto ***
+$font-stack: 'Roboto', sans-serif
+
+// *** Colors ***
+$white-color: #FFFFFF
+$black-color: #000000
+$red-color: #FF0000
+$bg-color: #F8F8F8
+$skill-color: #80888F
+$placeholder-color: #545454
+
+// *** Mixin ***
+
+@mixin center-page()
+    position: fixed
+    top: 45%
+    left: 50%
+    margin: 0
+    transform: translate(-50%, -50%)
+
+@mixin center-grid()
+    display: grid
+    justify-content: center
+    align-content: center
+
+@mixin max-content()
+    display: inline-block
+    width: max-content
+
+@mixin sub-title()
+    color: $red-color
+    font-size: 24px
+    font-weight: 500
+    @media screen and (max-width: 1000px)
+        font-size: 20px
+        @media screen and (max-width: 950px)
+            font-size: 18px
+            @media screen and (max-width: 826px)
+                font-size: 15px
+                @media screen and (max-width: 637px)
+                    font-size: 12px
+                    @media screen and (max-width: 586px)
+                        font-size: 10px
+                        @media screen and (max-width: 390px)
+                            font-size: 9px
+
+@mixin title()
+    color: $black-color
+    font-size: 72px
+    margin: 0px 0px 130px 0px
+    @media screen and (max-width: 1000px)
+        font-size: 60px
+        margin: 0px 0px 110px 0px
+        @media screen and (max-width: 950px)
+            font-size: 55px
+            @media screen and (max-width: 826px)
+                font-size: 50px
+                margin: 0px 0px 90px 0px
+                @media screen and (max-width: 637px)
+                    font-size: 40px
+                    margin: 0px 0px 80px 0px
+                    @media screen and (max-width: 586px)
+                        font-size: 30px
+                        margin: 0px 0px 60px 0px
+                        @media screen and (max-width: 487px)
+                            font-size: 25px
+                            margin: 0px 0px 60px 0px
+                            @media screen and (max-width: 390px)
+                                font-size: 22px
+                                margin: 0px 0px 50px 0px
+
+// *** Global Page Style && ClassName ***
+
+body
+    font-family: $font-stack
+    margin: 0
+
+html
+  scroll-behavior: smooth
+
+textarea,
+input,
+button
+    font-family: $font-stack
+
+.red-color
+    color: $red-color
+
+.white-color
+    color: $white-color
+
+.bg-red-color
+    background-color: $red-color
+
+.bg-color
+    background-color: $bg-color
+
+.flex
+    display: flex
+
+.space-evenly
+    justify-content: space-evenly
+
+.container
+    padding: 70px 90px
+    @media screen and (max-width: 1000px)
+        padding: 70px 75px
+        @media screen and (max-width: 970px)
+            padding: 50px 65px
+            @media screen and (max-width: 637px)
+                padding: 40px 55px
+                @media screen and (max-width: 586px)
+                    padding: 30px 40px
+                    @media screen and (max-width: 507px)
+                        padding: 30px 30px
+
+.center
+    @include center-grid()
+
+.sub-title
+    @include sub-title()
+    @include center-grid()
+
+.title
+    @include title()
+    @include center-grid()
+
+// *** Home Style ***
+
+.center-page
+    @include center-page()
+
+    h1
+        @include center-grid()
+    h4
+        @include center-grid()
+        margin-top: 20px
+        margin-bottom: 35px
+        @media screen and (max-width: 928px)
+            margin-top: 5px
+            margin-bottom: 25px
+            @media screen and (max-width: 464px)
+                margin-top: 5px
+                margin-bottom: 20px
+    div
+        @include center-grid()
+        button
+            color: $white-color
+            background-color: $black-color
+            border: none
+            width: 210px
+            height: 70px
+            font-size: 20px
+            @media screen and (max-width: 1113px)
+                border: none
+                width: 160px
+                height: 60px
+                font-size: 15px
+                @media screen and (max-width: 928px)
+                    border: none
+                    width: 160px
+                    height: 60px
+                    font-size: 15px
+                    @media screen and (max-width: 835px)
+                        border: none
+                        width: 130px
+                        height: 50px
+                        font-size: 12px
+                        @media screen and (max-width: 696px)
+                            border: none
+                            width: 120px
+                            height: 45px
+                            font-size: 12px
+                            @media screen and (max-width: 556px)
+                                border: none
+                                width: 105px
+                                height: 35px
+                                font-size: 10px
+                                @media screen and (max-width: 464px)
+                                    border: none
+                                    width: 90px
+                                    height: 32px
+                                    font-size: 10px
+                                    @media screen and (max-width: 371px)
+                                        border: none
+                                        width: 70px
+                                        height: 30px
+                                        font-size: 9px
+
+.title-home
+    color: $black-color
+    font-weight: 900
+    font-size: 48px
+    @media screen and (max-width: 1113px)
+        font-size: 40px
+        @media screen and (max-width: 928px)
+            font-size: 36px
+            @media screen and (max-width: 835px)
+                font-size: 30px
+                @media screen and (max-width: 696px)
+                    font-size: 24px
+                    @media screen and (max-width: 556px)
+                        font-size: 20px
+                        @media screen and (max-width: 464px)
+                            font-size: 16px
+                            @media screen and (max-width: 371px)
+                                font-size: 12px
+
+.sub-title-home
+    color: $black-color
+    font-weight: 500
+    font-size: 24px
+    @media screen and (max-width: 1113px)
+        font-size: 20px
+        @media screen and (max-width: 928px)
+            font-size: 20px
+            @media screen and (max-width: 835px)
+                font-size: 16px
+                @media screen and (max-width: 696px)
+                    font-size: 15px
+                    @media screen and (max-width: 556px)
+                        font-size: 14px
+                        @media screen and (max-width: 464px)
+                            font-size: 12px
+                            @media screen and (max-width: 371px)
+                                font-size: 10px
+
+// *** Welcome ***
+// *** NavBar ***
+
+.title-logo
+    align-items: center
+    h1
+        font-size: 42px
+        @media screen and (max-width: 1000px)
+            font-size: 32px
+            @media screen and (max-width: 950px)
+                font-size: 28px
+                @media screen and (max-width: 826px)
+                    font-size: 25px
+                    @media screen and (max-width: 637px)
+                        font-size: 20px
+                        @media screen and (max-width: 586px)
+                            font-size: 17px
+                            @media screen and (max-width: 487px)
+                                font-size: 15px
+
+.flex-end
+    justify-content: end
+    width: 100vw
+    .btn-contact
+        margin: 0px 97px 0px 0px
+        @media screen and (max-width: 950px)
+            margin: 0px 80px 0px 0px
+            @media screen and (max-width: 826px)
+                margin: 0px 70px 0px 0px
+                @media screen and (max-width: 637px)
+                    margin: 0px 50px 0px 0px
+                    @media screen and (max-width: 586px)
+                        margin: 0px 40px 0px 0px
+                        @media screen and (max-width: 487px)
+                            margin: 0px 35px 0px 0px
+    a,
+    span
+        font-size: 24px
+        font-weight: 400
+        color: $black-color
+        text-decoration: none
+        @media screen and (max-width: 1000px)
+            font-size: 20px
+            @media screen and (max-width: 950px)
+                font-size: 18px
+                @media screen and (max-width: 826px)
+                    font-size: 16px
+                    @media screen and (max-width: 637px)
+                        font-size: 13px
+                        @media screen and (max-width: 586px)
+                            font-size: 12px
+
+// *** Welcome title ***
+
+.welcome
+    font-size: 72px
+    margin: 70px 0px 190px 0px
+    @media screen and (max-width: 1000px)
+        font-size: 60px
+        margin: 60px 0px 160px 0px
+        @media screen and (max-width: 950px)
+            font-size: 55px
+            margin: 55px 0px 150px 0px
+            @media screen and (max-width: 826px)
+                font-size: 50px
+                margin: 50px 0px 140px 0px
+                @media screen and (max-width: 637px)
+                    font-size: 40px
+                    margin: 50px 0px 140px 0px
+                    @media screen and (max-width: 586px)
+                        font-size: 30px
+                        margin: 40px 0px 120px 0px
+                        @media screen and (max-width: 487px)
+                            font-size: 25px
+                            margin: 35px 0px 110px 0px
+                            @media screen and (max-width: 419px)
+                                margin: 25px 0px 90px 0px
+                                @media screen and (max-width: 390px)
+                                    font-size: 22px
+
+// *** About Me ***
+
+.about-me-container
+    display: inline-block
+    height: max-content
+    width: max-content
+
+.about-me
+    @include max-content()
+    font-size: 20px
+    font-weight: 900
+    margin: 16px 30px 16px 30px
+    @media screen and (max-width: 1379px)
+        font-size: 17px
+        @media screen and (max-width: 1156px)
+            margin: 14px 25px 14px 25px
+            font-size: 15px
+            @media screen and (max-width: 950px)
+                margin: 12px 20px 12px 20px
+                font-size: 15px
+                @media screen and (max-width: 826px)
+                    margin: 9px 15px 9px 15px
+                    font-size: 12px
+                    @media screen and (max-width: 637px)
+                        margin: 7px 13px 7px 13px
+                        font-size: 10px
+                        @media screen and (max-width: 586px)
+                            margin: 5px 11px 5px 11px
+                            font-size: 9px
+                            @media screen and (max-width: 487px)
+                                font-size: 9px
+                                margin: 5px 10px 5px 10px
+                                @media screen and (max-width: 390px)
+                                    font-size: 8px
+                                    margin: 5px 9px 5px 9px
+
+.about-text
+    font-size: 36px
+    font-weight: 300
+    @media screen and (max-width: 1379px)
+        font-size: 30px
+        @media screen and (max-width: 1156px)
+            font-size: 25px
+            @media screen and (max-width: 950px)
+                font-size: 22px
+                @media screen and (max-width: 826px)
+                    font-size: 20px
+                    @media screen and (max-width: 637px)
+                        font-size: 16px
+                        @media screen and (max-width: 586px)
+                            font-size: 15px
+                            @media screen and (max-width: 487px)
+                                font-size: 13px
+                                @media screen and (max-width: 390px)
+                                    font-size: 12px
+
+.about-text-container
+    max-width: 60rem
+    margin: 0px 0px 0px 88px
+    @media screen and (max-width: 1156px)
+        margin: 0px 0px 0px 70px
+        @media screen and (max-width: 950px)
+            margin: 0px 0px 0px 55px
+            @media screen and (max-width: 826px)
+                margin: 0px 0px 0px 45px
+                @media screen and (max-width: 637px)
+                    margin: 0px 0px 0px 30px
+                    @media screen and (max-width: 586px)
+                        margin: 0px 0px 0px 20px
+                        @media screen and (max-width: 487px)
+                            margin: 0px 0px 0px 17px
+
+// *** Icons Welcome ***
+
+.icon-github,
+.icon-instagram
+    font-size: 35px
+    color: $black-color
+    @media screen and (max-width: 1156px)
+        font-size: 30px
+        @media screen and (max-width: 950px)
+            font-size: 25px
+            @media screen and (max-width: 826px)
+                font-size: 23px
+                @media screen and (max-width: 637px)
+                    font-size: 20px
+                    @media screen and (max-width: 586px)
+                        font-size: 17px
+
+.icon-linkedin
+    font-size: 35px
+    margin: 0px 45px 0px 45px
+    color: $black-color
+    @media screen and (max-width: 1156px)
+        font-size: 30px
+        @media screen and (max-width: 950px)
+            font-size: 25px
+            @media screen and (max-width: 826px)
+                font-size: 23px
+                @media screen and (max-width: 637px)
+                    font-size: 20px
+                    @media screen and (max-width: 586px)
+                        font-size: 17px
+                        margin: 0px 40px 0px 40px
+                        @media screen and (max-width: 487px)
+                            margin: 0px 30px 0px 30px
+
+.icons-welcome
+    margin: 40px 0px 50px 0px
+    @media screen and (max-width: 950px)
+        margin: 40px 0px 30px 0px
+        @media screen and (max-width: 586px)
+            margin: 35px 0px 30px 0px
+            @media screen and (max-width: 487px)
+                margin: 30px 0px 25px 0px
+
+// *** Qualification - MyExperience ***
+
+.date
+    font-size: 36px
+    font-weight: 400
+    @media screen and (max-width: 1500px)
+        font-size: 33px
+        @media screen and (max-width: 1450px)
+            font-size: 30px
+            @media screen and (max-width: 1379px)
+                font-size: 25px
+                @media screen and (max-width: 1164px)
+                    font-size: 24px
+                    @media screen and (max-width: 1159px)
+                        font-size: 23.5px
+                    @media screen and (max-width: 1035px)
+                        font-size: 21px
+                        @media screen and (max-width: 861px)
+                            font-size: 17px
+                            @media screen and (max-width: 747px)
+                                margin-bottom: 10px
+                                width: 100px
+                                @media screen and (max-width: 487px)
+                                    font-size: 14px
+                                    @media screen and (max-width: 390px)
+                                        font-size: 11px
+                            // @media screen and (max-width: 712px)
+                            //     width: 50px
+                            //     @media screen and (max-width: 637px)
+                            //         font-size: 16px
+                            //         width: 45px
+                            //         @media screen and (max-width: 586px)
+                            //             font-size: 14px
+                            //             width: 39px
+                            //             @media screen and (max-width: 504px)
+                            //                 margin-bottom: 10px
+                            //                 width: 100px
+
+.flex-experience
+    display: flex
+    @media screen and (max-width: 747px)
+        margin-bottom: 20px
+        flex-direction: column
+        flex-wrap: nowrap
+
+.icon-dot-response
+    font-size: 0px
+    color: $white-color
+    margin: 0px 0px 0px 0px
+    @media screen and (max-width: 747px)
+        font-size: 35px
+        color: $red-color
+        margin: -10px 0px 0px 0px
+        @media screen and (max-width: 390px)
+            font-size: 30px
+            margin: -9px 0px 0px 0px
+
+.icon-dot
+    color: $red-color
+    font-size: 100px
+    margin: -30px 30px 0px 50px
+    @media screen and (max-width: 1414px)
+        margin: -30px 20px 0px 20px
+        @media screen and (max-width: 1379px)
+            margin: -30px 10px 0px 10px
+            @media screen and (max-width: 1156px)
+                margin: -25px 10px 0px 10px
+                font-size: 80px
+                @media screen and (max-width: 1035px)
+                    margin: -21px 10px 0px 10px
+                    font-size: 65px
+                    @media screen and (max-width: 861px)
+                        margin: -20px 10px 0px 10px
+                        font-size: 60px
+                        @media screen and (max-width: 747px)
+                            font-size: 0px
+                        // @media screen and (max-width: 712px)
+                        //     margin: -18px 5px 0px 5px
+                        //     font-size: 55px
+                        //     @media screen and (max-width: 637px)
+                        //         margin: -15px 5px 0px 5px
+                        //         font-size: 50px
+                        //         @media screen and (max-width: 586px)
+                        //             margin: -13px 5px 0px 5px
+                        //             font-size: 45px
+                        //             @media screen and (max-width: 504px)
+                        //                 margin: -12px 0px 0px 0px
+                        //                 font-size: 40px
+                        //                 @media screen and (max-width: 586px)
+                        //                     font-size: 0px
+
+.expe-description
+    margin-left: 35px
+    @media screen and (max-width: 390px)
+        margin-left: 30px
+
+.expe-sub-title
+    color: #A6A6A6
+    font-size: 36px
+    font-weight: 500
+    margin: 0
+    @media screen and (max-width: 1414px)
+        font-size: 30px
+        @media screen and (max-width: 1156px)
+            font-size: 25px
+            @media screen and (max-width: 1035px)
+                font-size: 21px
+                @media screen and (max-width: 861px)
+                    font-size: 17px
+                    @media screen and (max-width: 487px)
+                        font-size: 14px
+                        @media screen and (max-width: 390px)
+                            font-size: 11px
+
+.expe-title
+    color: $black-color
+    font-size: 36px
+    font-weight: 500
+    margin: 0
+    @media screen and (max-width: 1414px)
+        font-size: 30px
+        @media screen and (max-width: 1156px)
+            font-size: 25px
+            @media screen and (max-width: 826px)
+                font-size: 17px
+                @media screen and (max-width: 487px)
+                        font-size: 14px
+                        @media screen and (max-width: 390px)
+                            font-size: 11px
+
+.expe-list
+    font-size: 36px
+    font-weight: 300
+    list-style-type: none
+    @media screen and (max-width: 1414px)
+        font-size: 30px
+        @media screen and (max-width: 1156px)
+            font-size: 25px
+            @media screen and (max-width: 950px)
+                font-size: 21px
+                @media screen and (max-width: 861px)
+                    font-size: 17px
+                    @media screen and (max-width: 487px)
+                        font-size: 14px
+                        @media screen and (max-width: 390px)
+                            font-size: 11px
+    li::before
+        content: "•"
+        color: $black-color
+        display: inline-block
+        width: 1em
+        margin-left: -0.5em
+        @media screen and (max-width: 527px)
+            margin-left: -1.7em
+            @media screen and (max-width: 487px)
+                margin-left: -2.2em
+                @media screen and (max-width: 390px)
+                    margin-left: -3.5em
+
+// *** Aports Skills ***
+
+.skill-icons
+    font-size: 110px
+    color: $skill-color
+    align-content: center
+    align-items: center
+    @media screen and (max-width: 1379px)
+        font-size: 70px
+        @media screen and (max-width: 1000px)
+            font-size: 60px
+            @media screen and (max-width: 637px)
+                font-size: 50px
+                @media screen and (max-width: 586px)
+                    font-size: 45px
+                    @media screen and (max-width: 390px)
+                        font-size: 37px
+
+.skill-des
+    color: $skill-color
+    font-size: 30px
+    font-weight: 900
+    margin: 30px 0px 0px 0px
+    @media screen and (max-width: 1379px)
+        margin: 25px 0px 0px 0px
+        font-size: 25px
+        @media screen and (max-width: 1000px)
+            margin: 25px 0px 0px 0px
+            font-size: 20px
+            @media screen and (max-width: 637px)
+                margin: 20px 0px 0px 0px
+                font-size: 17px
+                @media screen and (max-width: 586px)
+                    font-size: 15px
+                    @media screen and (max-width: 390px)
+                        font-size: 10px
+
+.icons-container
+    margin: 0px 40px
+    @media screen and (max-width: 1379px)
+        margin: 0px 35px
+    @media screen and (max-width: 1000px)
+        margin: 0px 30px
+        @media screen and (max-width: 637px)
+            margin: 0px 25px
+            @media screen and (max-width: 586px)
+                margin: 0px 20px
+                @media screen and (max-width: 390px)
+                    margin: 0px 13px
+
+.container-skill
+    padding: 70px 0px
+    @media screen and (max-width: 970px)
+        padding: 50px 0px
+        @media screen and (max-width: 826px)
+            padding: 55px 0px
+            @media screen and (max-width: 637px)
+                padding: 40px 0px
+                @media screen and (max-width: 586px)
+                    padding: 30px 0px
+
+// *** Contact Me ***
+
+.input-contact
+    background-color: $bg-color
+    border: none
+
+.input-contact::placeholder
+    color: $placeholder-color
+    @media screen and (max-width: 504px)
+        font-size: 12px
+
+.input-name
+    width: 500px
+    height: 80px
+    margin-right: 10px
+    margin-bottom: 35px
+    padding-left: 25px
+    @media screen and (max-width: 1256px)
+        width: 450px
+        @media screen and (max-width: 1155px)
+            width: 400px
+            @media screen and (max-width: 1059px)
+                width: 350px
+                @media screen and (max-width: 958px)
+                    width: 300px
+                    @media screen and (max-width: 842px)
+                        width: 250px
+                        @media screen and (max-width: 712px)
+                            margin-bottom: 25px
+                            margin-right: 0px
+                            width: 350px
+                            @media screen and (max-width: 637px)
+                                width: 300px
+                                @media screen and (max-width: 586px)
+                                    height: 60px
+                                    @media screen and (max-width: 487px)
+                                        height: 50px
+                                        @media screen and (max-width: 390px)
+                                            width: 250px
+                                            @media screen and (max-width: 336px)
+                                                width: 200px
+
+.input-email
+    width: 500px
+    height: 80px
+    margin-left: 10px
+    margin-bottom: 35px
+    padding-left: 25px
+    @media screen and (max-width: 1256px)
+        width: 450px
+        @media screen and (max-width: 1155px)
+            width: 400px
+            @media screen and (max-width: 1059px)
+                width: 350px
+                @media screen and (max-width: 958px)
+                    width: 300px
+                    @media screen and (max-width: 842px)
+                        width: 250px
+                        @media screen and (max-width: 712px)
+                            margin-bottom: 25px
+                            margin-left: 0px
+                            width: 350px
+                            @media screen and (max-width: 637px)
+                                width: 300px
+                                @media screen and (max-width: 586px)
+                                    height: 60px
+                                    @media screen and (max-width: 487px)
+                                        height: 50px
+                                        @media screen and (max-width: 390px)
+                                            width: 250px
+                                            @media screen and (max-width: 336px)
+                                                width: 200px
+
+.flex-name-email
+    display: flex
+    @media screen and (max-width: 712px)
+        flex-direction: column
+
+.input-subject
+    height: 80px
+    margin-bottom: 35px
+    padding-left: 25px
+    @media screen and (max-width: 712px)
+        margin-bottom: 25px
+        @media screen and (max-width: 586px)
+            height: 60px
+            @media screen and (max-width: 487px)
+                height: 50px
+
+.textarea-subject
+    padding: 25px 0px 0px 25px
+    resize: vertical
+    margin: 0px 0px 45px 0px
+    // overflow: hidden
+
+.btn-style
+    color: $white-color
+    background-color: $black-color
+    font-size: 20px
+    padding: 20px
+    border: none
+    @media screen and (max-width: 1000px)
+        font-size: 17px
+        padding: 17px
+        border: none
+        @media screen and (max-width: 950px)
+            font-size: 14px
+            padding: 14px
+            border: none
+            @media screen and (max-width: 637px)
+                font-size: 12px
+                padding: 12px
+                border: none
+                @media screen and (max-width: 504px)
+                    font-size: 10px
+                    padding: 10px
+                    border: none
+
+.copy-style
+    font-size: 30px
+    font-weight: 700
+    color: $black-color
+    margin: 35px 0px 35px 0px
+    @media screen and (max-width: 1000px)
+        font-size: 25px
+        @media screen and (max-width: 950px)
+            font-size: 20px
+            @media screen and (max-width: 637px)
+                margin: 30px 0px 30px 0px
+                font-size: 15px
+                @media screen and (max-width: 504px)
+                    margin: 25px 0px 25px 0px
+                    font-size: 13px
+
+// *** Social Media Icons ***
+
+.icons-social
+    color: $black-color
+    font-size: 60px
+    @media screen and (max-width: 1000px)
+        font-size: 45px
+        @media screen and (max-width: 826px)
+            font-size: 40px
+            @media screen and (max-width: 637px)
+                font-size: 30px
+                @media screen and (max-width: 586px)
+                    font-size: 25px
+
+
+// *** CV-Page ***
+
+.arrow-btn
+    font-size: 40px
+    position: absolute
+    @media screen and (max-width: 450px)
+        font-size: 30px
+
+.title-resume
+    margin-top: 70px
+    @media screen and (max-width: 450px)
+        font-size: 30px
+
+.resume-btn
+    border: none
+    font-size: 20px
+    font-weight: bold
+    padding: 10px 20px 10px 20px
+    @media screen and (max-width: 605px)
+        font-size: 17px
+        padding: 10px 15px 10px 15px
+        @media screen and (max-width: 450px)
+            width: 150px
+            font-size: 15px
+            margin-bottom: 25px
+            padding: 10px 10px 10px 10px
+            
+
+.flex-btn-resume
+    @media screen and (max-width: 450px)
+        flex-direction: column
+        @include center-grid()
